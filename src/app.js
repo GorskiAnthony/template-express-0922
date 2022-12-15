@@ -13,6 +13,8 @@ app.use(logger("dev"));
 // Mustapha
 app.use("/public", express.static("public"));
 
+app.use(express.json());
+
 app.use("/api", routes);
 app.use("/api/admin", routesAdmin);
 

@@ -1,4 +1,9 @@
 class AdminController {
+	login = (req, res) => {
+		console.log(req.body);
+		res.send("Login");
+	};
+
 	get = function (req, res) {
 		res.send("Hello World 🌍 get ready for the next Battle");
 		console.log("Admin get");
